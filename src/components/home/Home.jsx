@@ -12,7 +12,6 @@ const Home = () => {
         dispatch(staticSong())
     }, [dispatch])
     const { song } = useSelector(state => state.song);
-    console.log(song)
     const data = {
         labels: ['Artists', 'Albums', 'Genres', 'Songs'],
         datasets: [

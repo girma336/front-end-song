@@ -8,7 +8,6 @@ const Song = () => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
     const { song } = useSelector((state) => state.song);
-
     useEffect(() => {
         dispatch(getSongs());
     }, [dispatch]);
@@ -17,7 +16,7 @@ const Song = () => {
         navigate(`/song/${id}`);
     };
     const handleAdd = () => {
-        navigate('/create'); // Specify the route you want to navigate to
+        navigate('/create');
     };
     return (
         <div>
