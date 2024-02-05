@@ -1,0 +1,33 @@
+.logo {
+    width: 60px;
+    border-radius: 30px;
+    margin-left: 30px;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    border-bottom: 1px solid lightgray;
+    box-shadow: 6px 4px 6px rgb(143, 147, 148);
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list__nav {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    /* justify-content: space-between; */
+}
+
+.list__element {
+    list-style: none;
+    margin-right: 8px;
+}
