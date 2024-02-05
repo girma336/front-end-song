@@ -16,7 +16,9 @@ const Song = () => {
     const handleEdit = (id) => {
         navigate(`/song/${id}`);
     };
-
+    const handleAdd = () => {
+        navigate('/create'); // Specify the route you want to navigate to
+    };
     return (
         <div>
             <h1 className="song-list-heading">Song List</h1>
@@ -45,6 +47,9 @@ const Song = () => {
                         ))}
                 </tbody>
             </table>
+            <div className="add_song_btn">
+                <button onClick={handleAdd} className="add-btn">Song &#x2795;</button>
+            </div>
         </div>
     );
 };

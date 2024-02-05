@@ -13,22 +13,10 @@ const Header = () => {
                 <div className="right-header">
                     <ul className="list__nav">
                         <li className="list__element">
-                            <Link to="/">Home</Link>
+                            <Link className='link-no-underline' to="/">Home</Link>
                         </li>
                         <li className="list__element">
-                            <Link to="/song">Songs</Link>
-                        </li>
-                        <li className="list__element">
-                            <Link to="/artists">Artists</Link>
-                        </li>
-                        <li className="list__element">
-                            <Link to="/albums">Albums</Link>
-                        </li>
-                        <li className="list__element">
-                            <Link to="/genres">Genres</Link>
-                        </li>
-                        <li className="list__element">
-                            <Link to="/statistics">Statistics</Link>
+                            <Link className='link-no-underline' to="/song">Songs</Link>
                         </li>
                     </ul>
                 </div>

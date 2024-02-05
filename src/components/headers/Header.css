@@ -24,10 +24,33 @@
     display: flex;
     align-items: center;
     margin-right: 20px;
-    /* justify-content: space-between; */
 }
 
 .list__element {
-    list-style: none;
-    margin-right: 8px;
+  cursor: pointer;
+  list-style: none;
+  margin-right: 8px;
+  border-radius: 8px;
+  padding: 8px;
+  border: 1px solid rgba(5, 7, 5, 0.133);
+  background-color: #b4afaf;
+  color: #333;
+  font-weight: bold;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  
+  /* Hover Styles */
+  &:hover {
+    background-color: #ddd;
+    color: #000;
+  }
+  
+  /* Active Styles */
+  &:active {
+    background-color: #aaa;
+    color: #fff;
+  }
+}
+
+.link-no-underline {
+  text-decoration: none;
 }

@@ -1,0 +1,15 @@
+.bar-static {
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 10px;
+    box-shadow: 4px 4px 8px rgba(84, 124, 84, 0.2);
+}
+
+.bar__element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(221, 214, 221);
+}

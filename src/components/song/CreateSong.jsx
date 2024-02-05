@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import './EditeSong.css';
+import React, { useState } from 'react';
+import './CreateSong.css';
 import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom';
 import { createSong } from '../../store/songSlice';
@@ -21,46 +21,50 @@ const CreateSong = () => {
     };
 
     return (
-        <div className='edit-form'>
+        <div className='add-form'>
             <form onSubmit={handleSubmit}>
                 <label>
-                    Title:
+                    {/* Title: */}
                     <input
                         type="text"
                         name="title"
                         value={song?.title || ''}
                         onChange={handleChange}
                         required
+                        placeholder='Enter song Title'
                     />
                 </label>
                 <label>
-                    Album:
+                    {/* Album: */}
                     <input
                         type="text"
                         name="album"
                         value={song?.album || ''}
                         onChange={handleChange}
                         required
+                        placeholder='Enter Album name'
                     />
                 </label>
                 <label>
-                    Artist:
+                    {/* Artist: */}
                     <input
                         type="text"
                         name="artist"
                         value={song?.artist || ''}
                         onChange={handleChange}
                         required
+                        placeholder='Enter artist name'
                     />
                 </label>
                 <label>
-                    Genre:
+                    {/* Genre: */}
                     <input
                         type="text"
                         name="genre"
                         value={song?.genre || ''}
                         onChange={handleChange}
                         required
+                        placeholder='Enter song Genre'
                     />
                 </label>
                 <button type="submit">Create Song</button>
